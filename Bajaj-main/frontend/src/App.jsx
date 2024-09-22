@@ -24,7 +24,7 @@ function App() {
 
     try {
       const parsedInput = JSON.parse(jsonInput);
-      const res = await axios.post('https://bajaj-x0rp.onrender.com/bfhl', { data: parsedInput.data });
+      const res = await axios.post('https://bajaj-qualifier-ce18.onrender.com/bfhl', { data: parsedInput.data });
       console.log(res.data);
       setResponse(res.data);
     } catch (error) {
